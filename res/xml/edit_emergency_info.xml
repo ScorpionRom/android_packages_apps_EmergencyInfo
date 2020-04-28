@@ -17,7 +17,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="edit_emergency_info_settings"
         android:title="@string/app_label">
-    <PreferenceCategory
+    <com.dirtyunicorns.support.preferences.CustomPreferenceCategory
             android:key="medical_info"
             android:title="@string/medical_info_title">
         <com.android.emergency.preferences.EmergencyNamePreference
@@ -89,7 +89,7 @@
             android:title="@string/add_medical_info">
             <intent android:action="android.emergency.EDIT_MEDICAL_INFO"/>
         </Preference>
-    </PreferenceCategory>
+    </com.dirtyunicorns.support.preferences.CustomPreferenceCategory>
 
     <com.android.emergency.preferences.EmergencyContactsPreference
             android:key="emergency_contacts"

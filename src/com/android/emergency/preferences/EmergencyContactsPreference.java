@@ -21,7 +21,7 @@ import android.content.res.TypedArray;
 import android.net.Uri;
 import androidx.annotation.NonNull;
 import androidx.preference.Preference;
-import androidx.preference.PreferenceCategory;
+//import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceManager;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -35,6 +35,8 @@ import com.android.internal.annotations.VisibleForTesting;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
+import com.dirtyunicorns.support.preferences.CustomPreferenceCategory;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -46,7 +48,7 @@ import java.util.regex.Pattern;
  *
  * <p>Contacts are stored internally using their ContactsContract.CommonDataKinds.Phone.CONTENT_URI.
  */
-public class EmergencyContactsPreference extends PreferenceCategory
+public class EmergencyContactsPreference extends CustomPreferenceCategory
         implements ReloadablePreferenceInterface,
         ContactPreference.RemoveContactPreferenceListener {
 

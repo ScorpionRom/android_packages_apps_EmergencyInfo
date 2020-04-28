@@ -24,7 +24,6 @@
 
     <!-- Base emergency theme. -->
     <style name="AppThemeEmergency" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:preferenceCategoryStyle">@style/AppTheme.PreferenceCategoryStyle</item>
         <item name="colorPrimaryDark">@color/emergency_primary_dark</item>
         <item name="colorPrimary">@color/emergency_primary</item>
         <item name="textColorActionBar">@color/tab_text_color</item>
@@ -54,11 +53,6 @@
         <item name="android:textSize">14sp</item>
     </style>
 
-    <!-- Preferences -->
-    <style name="AppTheme.PreferenceCategoryStyle" parent="Preference.Category">
-        <item name="android:layout">@layout/custom_preference_category_layout</item>
-    </style>
-
     <style name="PreferenceTheme" parent="@style/PreferenceThemeOverlay.SettingsBase">
         <!-- Parent path frameworks/support/SettingsLib/res/values/themes.xml -->
         <item name="footerPreferenceStyle">@style/FooterPreference</item>
@@ -74,9 +68,6 @@
         <item name="android:negativeButtonText">@android:string/cancel</item>
     </style>
 
-    <style name="PreferenceCategory" parent="@style/Preference.Category.Material">
-        <item name="android:layout">@layout/preference_category_material_settings</item>
-    </style>
     <style name="ClearAllDialogTheme" parent="@*android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth">
         <item name="android:colorBackgroundFloating">@*android:color/notification_material_background_color</item>
         <item name="android:colorAccent">@*android:color/accent_device_default_light</item>

@@ -38,7 +38,7 @@ public class ViewEmergencyContactsPreference extends EmergencyContactsPreference
         super.onBindViewHolder(holder);
         // Hide preference title if has at least one medical info preference is set.
         if (PreferenceUtils.hasAtLeastOnePreferenceSet(getContext())) {
-            View preferenceCategoryTitle = holder.findViewById(R.id.emergency_preference_category);
+            View preferenceCategoryTitle = holder.findViewById(android.R.id.title);
             preferenceCategoryTitle.setVisibility(View.GONE);
         }
     }
